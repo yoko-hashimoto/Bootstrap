@@ -1,0 +1,57 @@
+<!--
+
+<h1>ブログ一覧</h1>
+
+<p><%= notice %></p>
+
+<table>
+  <tr>
+    <th>タイトル</th>
+    <th>内容</th>
+  </tr>
+
+<% @blogs.each do |blog| %>
+  <tr>
+    <td><%= blog.title %></td>
+    <td><%= blog.content %></td>
+    <td><%= link_to "ブログを編集する", edit_blog_path(blog.id), data: { confirm: "本当に編集していいですか？" } %></td>
+    <td><%= link_to "ブログを削除する", blog_path(blog.id), method: :delete, data: { confirm: "本当に削除していいですか？" } %>
+  </tr>
+<% end %>
+</table>
+
+<br>
+
+<%= link_to '新しくブログを投稿する', new_blog_path %>
+-->
+
+
+
+<div class="container">
+  <div class="header">Bootstrap</div>
+  <nav class="menu">
+    <ul class="row">
+      <li class="col-md-4">top</li>
+      <li class="col-md-4">nemu1</li>
+      <li class="col-md-4">menu2</li>
+    </ul>
+  </nav>
+
+  <article>
+    <div class="contents">
+      <ul class="row">
+        <li class="col-md-6">contents1</li>
+        <li class="col-md-6">contents2</li>
+      </ul>
+    </div>
+    <div class="topic">
+      <ul>
+        <li>bootstrapを使ってレスポンシブデザインを実現しよう！</li>
+        <li>やればできる！bootstrapを使ってみよう！</li>
+        <li>怖くない！レスポンシブデザインができるようになればWebアプリケーションもワンランク上に！</li>
+      </ul>
+    </div>
+  </article>
+
+</div>
+
